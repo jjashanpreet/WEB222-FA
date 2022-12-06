@@ -1,0 +1,217 @@
+<!--
+Name        : Jashanpreet
+Student ID  : 168854214
+Email       : jjashanpreet@myseneca.ca
+Section     : WEB222-NII 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASHANPREET || WEB222 Final Project</title>
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./Assets/styles.css">
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <div class="website">
+        <!-- Navbar -->
+        <header class="navbar">
+            <nav>
+                <div class="nav-menu">
+                    <div class="menu">
+                        <ul class="nav-links">
+                            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">ABOUT ME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Menu Icon -->
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content of the Webpage -->
+        <main class="main">
+            <!-- Homepage -->
+            <section class="home" id="home">
+                <div class="home-content">
+                    <div class="home-img">
+                        <a href="index.html"><img src="./Assets/Images/home-img.png" alt="home-img"></a>
+                    </div>
+                    <div class="home-text">
+                        <h3>Hello!</h3>
+                        <h2>I'm <span class="color">JASHANPREET</span></h2>
+                        <p>I am an international student from India and Pursuing an Advanced Diploma in Computer Programming at Seneca College. I am passionate about Computer Science and Software Development and I look forward to connecting with you.</p>
+                    </div>
+                    <div class="home-btns">
+                        <a download="jashanpreet.pdf" href="./Assets/Files/jashanpreet.pdf"><button class="btn"><i class="uil uil-import"></i>Resume</button></a>
+                        <a href="#contact"><button class="btn">Contact Me</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about" id="about">
+                <h2 class="heading">ABOUT</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <span class="abt-span">Academic Honesty</span>
+                        <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+                        <span><strong>Date: </strong></span><p>Dec 6, 2022</p>
+                    </div>
+                    <div class="about-details">
+                        <span class="abt-span">Basic Information</span>
+                        <pre><strong>AGE:</strong>              19</pre>
+                        <pre><strong>EMAIL:</strong>            jjashanpreet@myseneca.ca</pre>
+                        <pre><strong>LANGUAGE:</strong>         English, Punjabi, Hindi</pre>
+                        <pre><strong>CLASS SECTION:</strong>    WEB222-NII</pre>
+                        <pre><strong>STUDENT ID:</strong>       168854214</pre>
+                        <pre><strong>INSTRUCTOR:</strong>       Mr. ROBIN LI</pre>
+                    </div>
+                   
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education" id="education">
+                <h2 class="heading">EDUCATION</h2>
+                <div class="education-content">
+                    <div class="education-box">
+                        <a href="https://www.gmacps.com/"> 
+                            <i class="uil uil-backpack"></i>
+                            <h2>High School Education, GMA City Public School, Singriwala, Hoshiarpur</h2>
+                            <p>July 2021</p>
+                        click anywhere to visit</a>
+                    </div>
+                    <div class="education-box">
+                        <a href="https://www.senecacollege.ca/campuses/newnhamlocation.html"> 
+                        <i class="uil uil-university"></i>
+                        <h2>Computer Programming (CPP), Seneca College</h2>
+                        <p>May 2022 - Sep 2023</p>
+                        click anywhere to visit</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="contact" id="contact">
+                <h2 class="heading">CONTACT ME</h2>
+                <div class="contact-content">
+                    <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+                        <!-- Name -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="name format">
+
+                        <!-- Email -->
+                        <label for="email">Email:</label>
+                        <!-- email type wasnt used because form is validated using js so it wasn't needed -->
+                        <input type="text" name="email" id="email" placeholder="Email address..." class="email format">
+
+                        <!-- Address -->
+                        <label for="address">Street Address:</label>
+                        <textarea name="address" id="address" cols="30" rows="2" placeholder="Enter your full address..." class="address"></textarea>
+                                              
+                        <!-- City -->
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="Enter city..." class="name format">
+
+                        <!-- Datalist for cities in Canada -->
+                        <label for="province">Province:</label>
+                        <input class="format" type="text" id="province" name="province" list="suggestions" placeholder="Enter province..."/>
+                        <datalist id="suggestions">
+                            <option label="Ontario" value="ON"></option>
+                            <option label="British Columbia" value="BC"></option>
+                            <option label="Alberta" value="AB"></option>
+                            <option label="Manitoba" value="MB"></option>
+                            <option label="New Brunswick" value="NB"></option>
+                            <option label="Newfoundland and Labrador" value="NL"></option>
+                            <option label="Northwest Territories" value="NT"></option>
+                            <option label="Nova Scotia" value="NS"></option>
+                            <option label="Nunavut" value="NU"></option>
+                            <option label="Prince Edward Island" value="PE"></option>
+                            <option label="Quebec" value="QC"></option>
+                            <option label="Saskatchewan" value="SK"></option>
+                            <option label="Yukon" value="YT"></option>
+                        </datalist>
+
+                        <!-- Postal Code -->
+                        <label for="pCode">Postal Code:</label>
+                        <input name="Postal_Code" type="text" id="pCode" class="format" placeholder="Postal Code">
+
+                        <!-- Purpose of this message -->
+                        <br>
+                        <div class="radio-btns">
+                            <label for="purpose">What is the purpose of this message?</label><br><br>
+                            <input type="radio" id="Job-Offer" name="purpose" value="Job-Offer">
+                            <label for="question">Job Offer</label><br>
+                            <input type="radio" id="School" name="purpose" value="School">
+                            <label for="comment">School</label><br>
+                            <input type="radio" id="Other" name="purpose" value="Other">
+                            <label for="hiring">Other</label>
+                        </div>
+                        <br>
+                        
+                        <!-- Field of work selection -->
+                        <label for="field">What is your field of work?</label>
+                        <select name="field" id="field" size="3">
+                            <option value="Engineering, Manufacturing, & Technology" selected>Engineering, Manufacturing, & Technology</option>
+                            <option value="Business, Management, & Administration">Business, Management, & Administration</option>
+                            <option value="Communications & Information Systems">Communications & Information Systems</option>
+                            <option value="Agriculture, Food, & Natural Resources">Agriculture, Food, & Natural Resources</option>
+                            <option value="Health Science Technology">Health Science Technology</option>
+                            <option value="Human Services">Human Services</option>
+                            <option value="Other">Other</option>
+                         </select>                       
+
+                         <!-- Message -->
+                        <label for="message">Any Message for me:</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message..." class="address"></textarea>
+
+                        <!-- Buttons -->
+                        <div class="form-btns">
+                            <input type="submit" value="Send" class="btn">
+                            <input type="reset" value="Clear" class="btn">
+                        </div>
+                        <div id="error"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Webpage Footer -->
+        <footer class="footer">
+            <h4>Jashanpreet</h4>
+            <p>I created this website as a part of my Final Project for WEB222 Course that I took as a second semester student at Seneca College, Toronto<br> 
+                <span>Copyright&copy; 2022</span></p>
+
+            <div class="icons">
+                
+                <a href="https://github.com/Sarab1153" target="_blank"><i class="uil uil-github"></i></a>
+                
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="./Assets/script.js"></script>
+</body>
+</html>
